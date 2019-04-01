@@ -1,0 +1,51 @@
+.menu {
+  height: 4em;
+  background-color: rgb(92, 184, 221);
+}
+.logo {
+  height: 4em;
+}
+body {
+  margin: 0;
+}
+
+.with-padding {
+  padding: 10px;
+}
+
+.form-label {
+  font-size: 1.2rem;
+
+}
+
+.form-input {
+  float: right;
+}
+
+.form {
+ padding: 1px;
+}
+
+.input-list {
+  border: 1px solid lightgray;
+  width: 400px;
+  padding: 10px;
+  display: block;
+}
+
+.calc-button {
+  position: relative;
+  height: 1.5rem;
+  margin-top: 15px;
+  left: 327px;
+}
+
+.schedule-table {
+  margin-top: 30px;
+  width: 300px;
+  border: 1px solid lightgrey;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr {
+  text-align: left;
+}
