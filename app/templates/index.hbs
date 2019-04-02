@@ -1,0 +1,8 @@
+<div>
+  <div class="right"></div>
+  <h2>Welcome! Please complete the form to display your amortization schedule!</h2>
+  {{loan-details-form months="90" loanCreated=(action "loanCreated")}}
+</div>
+{{#if loan}}
+  {{loan-schedule loan=loan}}
+{{/if}}

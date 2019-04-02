@@ -1,0 +1,33 @@
+<div>
+  <div class="loan-info">
+    <p><b>Initial Loan Amount: </b> ${{loan.amount}}</p>
+    <p><b>Terms: </b> {{loan.months}} months</p>
+    <p><b>Rate: </b> {{loan.rate}}%</p>
+    <p><b>Monthy payment: </b> ${{loan.monthly}}</p>
+    <p><b>Total cost of loan: </b> ${{loan.total}}</p>
+  </div>
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th>Payment #</th>
+        <th>Balance</th>
+        <th>Interest</th>
+        <th>Principal</th>
+        <th>Principal To Date</th>
+        <th>Interest To Date</th>
+      </tr>
+    </thead>
+    <tbody class="table-body">
+      {{#each loan.schedule as |row index|}}
+        <tr>
+          <td>{{list-index index}}</td>
+          <td>{{row.balance}}</td>
+          <td>{{row.interest}}</td>
+          <td>{{row.principal}}</td>
+          <td>{{row.principalToDate}}</td>
+          <td>{{row.interestToDate}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

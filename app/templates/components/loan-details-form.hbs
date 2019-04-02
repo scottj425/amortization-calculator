@@ -1,0 +1,19 @@
+<div class="loan-details-form">
+  <div class="input-list">
+    <div class="form">
+      <label class="form-label">Principal:</label>
+      {{input type="text" class="form-input" value=principal}}
+    </div>
+    <div class="form">
+      <label class="form-label">Annual Interest Rate:</label>
+      {{input type="text" class="form-input" value=rate}}
+    </div>
+    <div class="form">
+      <label class="form-label">Months:</label>
+      {{input type="text" class="form-input" value=months}}
+    </div>
+    <div class="form">
+      <button class="calc-button" {{action "generateSchedule"}}>Calculate</button>
+    </div>
+  </div>
+</div>
